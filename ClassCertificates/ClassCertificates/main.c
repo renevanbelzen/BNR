@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+#include <unistd.h>
 
 void congratulateStudent(char *student, char *course, int numDays)
 {
@@ -17,8 +18,11 @@ void congratulateStudent(char *student, char *course, int numDays)
 int main(int argc, const char * argv[])
 {
     congratulateStudent("Mark", "Cocoa", 5);
+    sleep(2);
     congratulateStudent("Bo", "Objective-C", 2);
-    congratulateStudent("Mike", "Python", 5);
+    sleep(2);
+    congratulateStudent("Mike", "PHP and PostgreSQL", 5);
+    sleep(2);
     congratulateStudent("Ted", "iOS", 5);
     
     return 0;
